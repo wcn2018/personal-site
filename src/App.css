@@ -1,5 +1,26 @@
-.App {
+.l-r_with_arrows {
+  /* background-image: url(brickwall.jpg); later, make the wall for the poster*/
+  background-color: cornsilk;
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   text-align: center;
+  font-size: calc(20px + 2vmin);
+}
+
+.t-d_with_arrows {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Poster {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
 }
 
 .App-logo {
