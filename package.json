@@ -15,7 +15,8 @@
     "build": "webpack",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && npm run git-commit && npm run git-push"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -54,6 +55,4 @@
     "url": "https://github.com/wcn2018/personal-site/issues"
   },
   "homepage": "https://github.com/wcn2018/personal-site/",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
 }
