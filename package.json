@@ -8,7 +8,6 @@
     "react-scripts": "^3.3.0"
   },
   "scripts": {
-    "test": "jenkins",
     "old start": "old start : react-scripts start",
     "start": "webpack-dev-server",
     "old build": "build: react-scripts build",
@@ -36,6 +35,7 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.6",
     "babel-preset-react": "^6.24.1",
+    "gh-pages": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
@@ -52,5 +52,7 @@
   "bugs": {
     "url": "https://github.com/wcn2018/personal-site/issues"
   },
-  "homepage": "https://github.com/wcn2018/personal-site/"
+  "homepage": "https://github.com/wcn2018/personal-site/",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
 }
